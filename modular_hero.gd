@@ -34,6 +34,36 @@ const mesh_slots = preload("./modular_hero_meshes.res")
 @export_range(-1, 20) var shoulder_attach_left: int = -1: set = _set_shoulder_attach_left
 @export_range(-1, 20) var shoulder_attach_right: int = -1: set = _set_shoulder_attach_right
 
+func _ready() -> void:
+    arm_lower_left = arm_lower_left
+    arm_lower_right = arm_lower_right
+    arm_upper_left = arm_upper_left
+    arm_upper_right = arm_upper_right
+    ear = ear
+    hand_left = hand_left
+    hand_right = hand_right
+    head = head
+    head_no_elements = head_no_elements
+    hips = hips
+    leg_left = leg_left
+    leg_right = leg_right
+    torso = torso
+    eyebrow = eyebrow
+    facial_hair = facial_hair
+    hair = hair
+    back_attachment = back_attachment
+    elbow_attach_left = elbow_attach_left
+    elbow_attach_right = elbow_attach_right
+    head_coverings_base_hair = head_coverings_base_hair
+    head_coverings_no_facial_hair = head_coverings_no_facial_hair
+    head_coverings_no_hair = head_coverings_no_hair
+    helmet_attachment = helmet_attachment
+    hips_attachment = hips_attachment
+    knee_attach_left = knee_attach_left
+    knee_attach_right = knee_attach_right
+    shoulder_attach_left = shoulder_attach_left
+    shoulder_attach_right = shoulder_attach_right
+
 func set_mesh(slot_name: String, idx: int) -> void:
     if not is_inside_tree():
         return
